@@ -34,14 +34,15 @@ export const useFetchDocument = (docCollection, id) => {
             } catch (error) {
                 console.log(error);
                 setError(error.message)
-                setLoading(false)
                 console.log("cai no error catch")
 
             }
+            setLoading(false)
 
         } 
         loadDocument()
         console.log("por que cai no loaddocument")
+        console.log(docCollection, id)
     }, [docCollection, id, cancelled]);
 
     useEffect(() => {
@@ -49,4 +50,4 @@ export const useFetchDocument = (docCollection, id) => {
     }, []);
 
     return {document, loading, error};
-}
+};
