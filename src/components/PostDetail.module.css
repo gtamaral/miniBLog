@@ -1,23 +1,32 @@
 .post_detail {
     margin-bottom: 2em;
-    align-items: center;
     display: flex;
     flex-direction: column;
-
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
 }
   
 .post_detail img {
-    max-width: 1000px;
+    max-width: 400px;
+    border: 3px solid black;
+    margin: auto;
+    
 }
   
 .post_detail h2 {
     margin-bottom: 0.4em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
   
 .post_detail .tags {
     margin-bottom: 1.2em;
     display: flex;
-    flex-direction:column-reverse;
+    margin-right: 1em;
+    align-items: center;
+    justify-content: center;
 }
   
 .tags p {
@@ -30,7 +39,13 @@
   
 .createdby {
     font-style: italic;
-    color: #444;
+    color: #181515;
     font-size: 0.8em;
     margin-bottom: 1em;
+}
+
+.central_button {
+    align-items: center;
+    display: flex;
+    justify-content: center
 }

@@ -26,7 +26,7 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div className={styles.home}>
         <h2>Veja os nossos posts mais recentes</h2>
         <form onSubmit={handleSubmit} className={styles.search_form}>
           <input 
@@ -34,7 +34,7 @@ const Home = () => {
           placeholder="Ou busque por tags..."
           onChange={(e) => setQuery(e.target.value)}
           ></input>
-          <button className="btn btn-dark">Pesquisar</button>
+          <button className="btn btn-outline">Pesquisar</button>
         </form>
         <div>
           {loading && <p>Carregando...</p>}

@@ -11,7 +11,7 @@ import { useAuthentication } from "../../hooks/useAuthentication";
 const Register = () => {
 
 
-  const [displaynome, setDisplayNome] = useState("")
+  const [displayName, setDisplayName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [confirmpassword, setConfirmPassword] = useState("")
@@ -26,9 +26,9 @@ const Register = () => {
 
     //formando usuario
     const user = {
-      displaynome,
+      displayName,
       email,
-      password
+      password,
     }
 
     if(password !== confirmpassword) {
@@ -56,11 +56,11 @@ const Register = () => {
           <span>Nome: </span>
           <input 
           type="text" 
-          name="displaynome"
+          name="displayName"
           required
           placeholder="nome do usuário"
-          value={displaynome}
-          onChange={(e) => setDisplayNome(e.target.value)}
+          value={displayName}
+          onChange={(e) => setDisplayName(e.target.value)}
           />
         </label>
         <label>
